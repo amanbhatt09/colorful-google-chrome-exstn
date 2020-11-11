@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Colorful Google",
+    "description": "Colorful Background for www.google.com and search results_abx",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "js": [
+                "contentscript.js"
+            ],
+            "matches": [
+                "https://www.google.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "192": "color.png"
+    },
+    "browser_action": {
+        "default_icon": "color.png",
+        "default_popup": "popup.html"
+    }
+}
